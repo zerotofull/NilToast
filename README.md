@@ -5,11 +5,16 @@
 ## 下载
 
 ```cmd
-git clone 
+git clone https://github.com/zerotofull/NilToast.git
 ```
 
 ## 使用
 
-1. `script` 标签引入
+1. 标签引入
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zerotofull/NilToast/dist/toast.min.css"> </link>
+<script src="https://cdn.jsdelivr.net/gh/zerotofull/NilToast/dist/toast.min.js"> </script>
+```
 
 2. 下载后使用

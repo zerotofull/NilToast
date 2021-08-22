@@ -6,14 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>示例Dmeo</title>
   <link rel="stylesheet" href="../dist/toast.min.css">
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <div class="main">hello world</div>
 
+  <div class="app">
+
+    <button class="btn" data-method="showMsg">msg Toast</button>
+    <button class="btn" data-method="showLoading">show Loading</button>
+    <button class="btn" data-method="showAlertDialog">show AlertDialog</button>
+    <button class="btn" data-method="showConfirmDialog">show ConfirmDialog</button>
+
+
+  </div>
 
   <script src="../dist/toast.min.js"></script>
-  <script>
-    NilToast.msg("hello world")
-  </script>
+  <script src="./main.js"></script>
 </body>
 </html>

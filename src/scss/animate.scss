@@ -1,13 +1,11 @@
 :root {
-  --animate-duration: 1s;
-  --animate-delay: 1s;
-  --animate-repeat: 1;
+  --animate-duration: .5s;
 }
 
 .animated {
   animation-duration: 1s;
   animation-duration: var(--animate-duration);
-  animation-fill-mode: both
+  animation-fill-mode: both;
 }
 
 @keyframes bounceIn {
@@ -76,3 +74,84 @@
   animation-duration: calc(var(--animate-duration) * 0.75);
   animation-name: bounceOut;
 }
+
+@keyframes changeright {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate__changeright{
+  animation:changeright 2s linear infinite;
+}
+
+@keyframes opcity120 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate__opcity120{
+  animation:opcity120 .3s ease-in;
+}
+
+@keyframes opcity021 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animate__opcity021{
+  animation:opcity021 .3s ease-out;
+}
+
+@keyframes zoomIn {
+  0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3,.3,.3);
+      transform: scale3d(.3,.3,.3)
+  }
+
+  50% {
+      opacity: 1
+  }
+}
+
+.animate__zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn
+}
+
+
+@keyframes zoomOut {
+  0% {
+      opacity: 1
+  }
+
+  50% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3,.3,.3);
+      transform: scale3d(.3,.3,.3)
+  }
+
+  to {
+      opacity: 0
+  }
+}
+
+.animate__zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut
+}
+

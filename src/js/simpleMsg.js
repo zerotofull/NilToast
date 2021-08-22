@@ -29,7 +29,7 @@ export default function (config) {
     postionY: 50,
   }
   if (!config) {
-    throw new NilException(exceptions.SIMPLE_MSG_WITHOUT_CONFIG)
+    throw new NilException(exceptions.WITHOUT_CONFIG)
   }
 
   if (typeof config === 'string') {
@@ -49,13 +49,13 @@ export default function (config) {
   msgInnerDiv.classList.add('animate__bounceIn')
   setTimeout(function () {
     msgInnerDiv.classList.remove('animate__bounceIn')
-  }, 600)
+  }, 500)
 
   setTimeout(function () {
     msgInnerDiv.classList.add('animate__bounceOut')
     setTimeout(function () {
       msgDiv.remove()
-    }, 600)
+    }, 500)
   }, _config.time)
 
   console.log('[ config ] >', _config)

@@ -1,5 +1,5 @@
 export const exceptions = {
-  SIMPLE_MSG_WITHOUT_CONFIG: {
+  WITHOUT_CONFIG: {
     message: 'Config 或者 msg 不存在',
     code: 12001,
   },
